@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import Hooks from './Components/Hooks';
 // import HOC from './Components/HOC';
 // import RenderProp from './Components/RenderProp';
 // import Toggle from './Components/Toggle';
-​
+
 const artists = [
   {
       name: 'Modest Mouse',
@@ -35,11 +36,13 @@ const artists = [
           'https://media.npr.org/assets/img/2016/01/11/gettyimages-114939559-152a6dea2f0ae78878fb4b1d2a596cb229556a44-s800-c85.jpg'
   }
 ]
-​
+
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Hooks</h1>
+        <Hooks />
         <h1>Higher Order Component</h1>
         {/* HOC examples go here */}
         <h1>Render Props</h1>
@@ -48,5 +51,5 @@ class App extends Component {
     );
   }
 }
-​
+
 export default App;
